@@ -15,8 +15,7 @@ It was a template that we translated it to Persian!  <br>
 
 ### How to run project
 1. Install <code>Python3</code>
-2. Install <code>Django</code> and other libs in <code>requirements.txt</code> using <code>pip</code>
-    <code>pip install -r requirements.txt</code>
+2. Install <code>Django</code> and other libs in <code>requirements.txt</code> using <code>pip install -r requirements.txt</code>
 3. Run the project using <code>python manage.py runserver</code>
 4. Go to http://localhost:8000 and see the website
 
