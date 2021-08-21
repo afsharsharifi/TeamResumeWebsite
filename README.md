@@ -22,7 +22,7 @@ You can use <code> pip install -r requirements.txt </code>
 If you are using other versions of django make sure to instal last version on a vertualenv
 
 ## Authors
-<a href="afsharsharifi2020@gmail.com">Afshar Sharifi</a>
-<a href="esmaili.mohhamad@gmail.com">Mohammad Esmaili</a>
+<a href="mailto: afsharsharifi2020@gmail.com">Afshar Sharifi</a><br>
+<a href="mailto: esmaili.mohhamad@gmail.com">Mohammad Esmaili</a>
 
 <a href="https://www.elmanawy.info/marwa/">Template Copyright</a>
