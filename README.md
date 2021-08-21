@@ -13,7 +13,12 @@ It was a template that we translated it to Persian!  <br>
 
 - django
 
-### Installing
+### How to run project
+1. Install <code>Python3</code>
+2. Install <code>Django</code> and other libs in <code>requirements.txt</code> using <code>pip</code>
+    <code>pip install -r requirements.txt</code>
+3. Run the project using <code>python manage.py runserver</code>
+4. Go to http://localhost:8000 and see the website
 
 Install requirements.txt and use it easily
 You can use <code> pip install -r requirements.txt </code>
