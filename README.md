@@ -5,6 +5,6 @@ I will do my best to make it pro and more usefull
 It was a template that we translated it to Persian!
 
 
-# template copyright
-https://www.elmanawy.info/marwa/
+<a href="https://www.elmanawy.info/marwa/">Template Copyright</a>
+
 
