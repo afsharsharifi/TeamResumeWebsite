@@ -1,0 +1,161 @@
+#js-rotating{
+    color: #004dda;
+}
+.section-heading h2 span {
+    color: #004dda;
+}
+#back-to-top .top:hover {
+    background: #004dda;
+}
+.nav-menu ul li a:hover {
+    color: #004dda;
+}
+.navbar-brand i{
+    color: #004dda;
+}
+.nav-menu ul li a.active {
+    color: #004dda;
+}
+.slideouticons label.mainlabel {
+   
+    background: #004dda;
+   
+}
+.slideouticons input:checked ~ label.mainlabel {
+    color: #004dda;
+}
+.list-award li span b {
+    color: #004dda;
+}
+
+.typo-pg {
+    border-right: 3px solid #004dda;
+}
+.single-service:hover{
+    border-bottom: 3px solid #004dda;  
+}
+
+.single-service:hover .service-icon {
+    background-color: #004dda;
+
+}
+.single-service .service-icon i:before {
+    color: #004dda
+}
+.single-service > h5 > a:hover {
+    color: #004dda
+}
+
+.user-interface .title {
+    color: #004dda;
+}
+.form-control:focus {
+    border-color: #004dda;
+}
+#contact-form .button{
+    background-color: #004dda;
+}
+.footer-logo{
+    color:#004dda;
+}
+.footer-btm a:hover {
+    color: #004dda;
+}
+.button.btn-white{
+    color: #004dda;
+}
+.button.btn-default{
+    background-color: #004dda;
+}
+.contact .box-info {
+  background-color: #004dda;
+}
+.footer-btm a:hover {
+    color: #004dda;
+}
+.footer .footer-social ul li a:hover {
+    background: #004dda;
+}
+.footer-social .tooltip:after,
+.footer-social [data-tooltip]:after {
+    background-color: #004dda;
+}
+.footer-social [data-tooltip]:before,
+.footer-social .tooltip:before,
+.footer-social .tooltip-top:before {
+    border-top-color: #004dda;
+}
+.mr-star i {
+    color: #004dda;
+}
+.team-area .owl-pagination .owl-page.active span {
+    background: #004dda;
+}
+.submit-subscribe-btn {
+    background: #004dda;
+}
+
+.isotope-filters button.active,
+.isotope-filters button:hover {
+    background: #004dda;
+}
+.isotope-filters.isotope-tooltip button span {
+    background: #004dda;
+}
+.isotope-filters.isotope-tooltip button span:after {
+    border-top: 8px solid #004dda;
+}
+.mr-blog-entry:hover h5{
+    color: #004dda;
+}
+.mr-entry-image .tag {
+    background: #004dda;
+}
+.mr-entry-image .date {
+    background: #004dda;  
+}
+.mr-entry-title a:hover h5 {
+    color: #004dda;
+}
+.mr-entry-meta li a:hover {
+    color: #004dda;
+}
+.plan-price h3 i{
+    color: #004dda;
+}
+.plan.featured .plan-price {
+    background-color: #004dda;
+}
+a.button.border,
+a.button, .button {
+    color: #004dda;
+    border: 1px solid #004dda;
+}
+.plan a.button:hover,
+.plan.featured a.button {
+    background-color: #004dda;
+}
+.gen {
+    background: #004dda;
+}
+.counter-section .counter .icon i {
+    color: #004dda;
+}
+.isotope-filters button.active,
+.isotope-filters button:hover {
+    background: #004dda;
+}
+.plan.featured .listing-badge span {
+    color: #004dda;
+}
+.marv-portfolio:hover .mr-overbg {
+    background: rgba(26, 28, 29, 0.47);
+}
+.button.btn-default:hover{
+    color: #004dda;
+}
+@media (max-width: 991px) {
+     .navber-area .nav-menu {
+        background: #004dda;
+     }
+}

@@ -1,0 +1,487 @@
+/* Big Screen */
+
+@media (min-width: 2560px) {
+    .gallery .left-side {
+        padding-left: 67%;
+    }
+    .flickity-page-dots {
+        left: -29%;
+    }
+    .home-default-slide .content {
+        margin-left: 47%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .gallery .left-side {
+        padding-left: 35%;
+    }
+    .home-default-slide .content {
+        margin-left: 23%;
+    }
+    .flickity-page-dots {
+        left: -57%;
+    }
+    .iframe-image {
+        top: 2px;
+    }
+    .gallery-cell {
+        width: 33%;
+    }
+    .home-default-slide .content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .home-default-slide .content {
+        margin-left: 17%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .gallery .left-side {
+        padding-left: 21%;
+    }
+    .home-default-slide .content {
+        margin-left: 11%;
+    }
+    .flickity-page-dots {
+        left: -70%;
+    }
+    .iframe-image {
+        top: 13px;
+    }
+    .support-area {
+        background: none;
+    }
+    .support-area .inner {
+        background: none;
+    }
+    .gallery-cell {
+        width: 35%;
+    }
+}
+
+
+/* Portrait tablets and medium desktops */
+
+@media (max-width: 991px) {
+    .contact .box-info {
+        margin-top: 20px;
+    }
+    .navbar-brand {
+        height: 60px;
+    }
+    .mt80 {
+        margin-top: 20px;
+    }
+    .pricing-container {
+        padding-top: 20px;
+    }
+    .banner-center-content h4 {
+        font-size: 14px;
+    }
+    .banner-center-content h1 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    .navbar-brand>img {
+        display: inline;
+        height: 30px;
+    }
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .plan {
+        margin-bottom: 30px;
+    }
+    .contact .section-heading {
+        margin-bottom: 40px;
+    }
+    .contact .part-top {
+        padding-top: 70px !important;
+    }
+    .isotope-filters.isotope-tooltip {
+        margin: 50px auto 50px;
+    }
+    .all-reviews {
+        padding-top: 25px;
+    }
+    .all-team {
+        padding-top: 25px;
+    }
+    .prallex-newsletter {
+        padding: 50px 0;
+    }
+    .reviews-area {
+        padding: 50px 0;
+    }
+    .mt100 {
+        margin-top: 70px;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .contact .contact-form h4, .contact .box-info h4{
+        font-size: 30px;
+    }
+    .banner-center-content {
+        padding: 0 1%;
+        width: 98%;
+    }
+    .banner-center-content h2 {
+        font-size: 38px;
+    }
+    .mr-blog-entry {
+        margin-bottom: 30px;
+    }
+    .newsletter-area .content p {
+        font-size: 17px;
+    }
+    .single-service {
+        margin-bottom: 60px;
+    }
+
+    .download-app-area .all-image img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pdl70 {
+        padding-left: 20px;
+    }
+    .blog-pagination {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .single-app-theme .media {
+        padding-bottom: 60px;
+        position: relative;
+    }
+
+
+    .nav-menu ul li {
+        padding: 6px;
+    }
+    .main-menu-fix ul li {
+        padding: 15px 6px;
+    }
+    .navber-area .logo {
+        max-width: 190px;
+        padding-top: 20px;
+        transition: all 0.5s ease 0s;
+    }
+    .main-menu-fix .logo {
+        padding: 0;
+    }
+
+    /* Navbar Collaps */
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-nav > li {
+        float: none;
+    }
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navber-area {
+        -webkit-transition: all 1s ease 0s;
+        -moz-transition: all 1s ease 0s;
+        -o-transition: all 1s ease 0s;
+        -ms-transition: all 1s ease 0s;
+        transition: all 1s ease 0s;
+        top: -100%;
+    }
+    .navber-area.show {
+        display: block;
+    }
+    .navber-area .navbar-toggle {
+        margin-right: 0;
+        margin-top: 36px;
+        -webkit-transition: all .5s ease 0s;
+        -moz-transition: all .5s ease 0s;
+        -o-transition: all .5s ease 0s;
+        -ms-transition: all .5s ease 0s;
+        transition: all .5s ease 0s;
+    }
+    .navber-area .nav-menu {
+        padding-left: 0;
+        padding-bottom: 30px;
+        display: block !important;
+        border: 0 !important;
+        height: 2000px !important;
+        position: fixed;
+        right: 0;
+        top: 0;
+        -webkit-transform: translate3d(265px, 0px, 0px);
+        -moz-transform: translate3d(265px, 0px, 0px);
+        -o-transform: translate3d(265px, 0px, 0px);
+        transform: translate3d(265px, 0px, 0px);
+        transition: all 0.3s;
+        width: 265px;
+    }
+    .navber-area.show .nav-menu {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -o-transform: translate3d(0px, 0px, 0px);
+        -moz-transform: translate3d(0px, 0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+        z-index: 999;
+    }
+    .navber-area .nav-menu ul {
+        float: left;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .navber-area .nav-menu ul li {
+        padding: 11px 10px;
+        text-align: left;
+    }
+    .navber-area .nav-menu ul li a {
+        /*color: #000;*/
+    }
+    .navber-area .navbar-collapse {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .navber-area .navbar-collapse {
+        box-shadow: none;
+        border: 0;
+    }
+    .main-menu-fix .navbar-toggle {
+        margin-top: 17px;
+    }
+    /*  Demo Nav ber */
+    .demo-navber {
+        display: block;
+    }
+    .navbar-header {
+        display: none;
+    }
+    .main-menu-fix .nav-menu {
+        padding-top: 40px;
+    }
+    .nav-close-button {
+        display: block;
+    }
+
+    .user-interface p {
+        max-width: 100%;
+    }
+    .single-prallex .left-side p {
+        max-width: 100%;
+    }
+
+    .demo-navber.main-menu-fix .demo-button {
+        padding-top: 18px;
+    }
+    .single-app-theme.border,
+    .single-app-theme {
+        text-align: center;
+    }
+    .single-app-theme {
+        margin-bottom: 0;
+    }
+    .single-app-theme .image {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+    .single-app-theme .image img {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 250px;
+    }
+    .single-app-theme .content {
+        margin-left: 0;
+    }
+    .single-app-theme .content .rating a.get {
+        float: none;
+        padding: 2px 15px 0px 13px;
+        display: block;
+        max-width: 75px;
+        margin: 15px auto;
+    }
+    .single-app-theme .media {
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .single-app-theme.border {
+        margin-bottom: 45px;
+    }
+}
+
+/* End 768 */
+@media (max-width: 768px) {
+    .list-inline>li {
+        margin-bottom: 15px;
+    }
+    .subscribe-box .text-box {
+        font-size: 12px;
+    }
+    .plan {
+        flex: 100%;
+        margin-bottom: 15px;
+    }
+    .plan.featured {
+        transform: none;
+    } 
+}
+
+/* Phone Standard Width */
+
+@media (max-width: 480px) {
+    .mr-masonry.mr-columns-3 .mr-masonry-item{
+        width: 100%;
+    }
+    .apple-button,
+    .google-button {
+        margin-bottom: 15px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .contact-information .single .left {
+        display: block;
+    }
+    .navber-area .nav-menu {
+        padding-bottom: 10px;
+    }
+    .nav-menu ul li a {
+        font-size: 13px;
+    }
+    .navber-area .nav-menu ul li {
+        padding: 7px 5px;
+    }
+    /*  Default Home */
+    .home-default-slide .content h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+
+    .home-default-slide .content .app-button {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .page-info {
+        padding: 153px 0 157px;
+    }
+    .page-info h2 {
+        font-size: 50px;
+    }
+    .section-heading h2 {
+        font-size: 36px;
+    }
+    .demo-navber .demo-logo {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .demo-navber .demo-logo a{
+        padding-left: 0;
+    }
+    .demo-navber .demo-button {
+        padding-top: 18px;
+    }
+    .demo-navber.main-menu-fix .demo-button {
+        padding-top: 25px;
+    }
+    .demo-navber .demo-button i {
+        font-size: 16px;
+    }
+}
+
+
+/* Extra smaller */
+
+
+/* iPhone 4s and Smaller Screen */
+
+@media (max-width: 360px) {
+    .single-reviews blockquote {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .blog-title h2 {
+        font-size: 15px;
+    }
+    .apple-button,
+    .google-button {
+        margin-bottom: 15px;
+        width: 97%;
+    }
+    .app-button a {
+        padding: 10px 50px;
+    }
+    .download-app-area .all-image {
+        margin-left: 0;
+    }
+    .all-image img {
+        width: 100%;
+    }
+    .top-image {
+        display: none;
+    }
+
+    #home-slider .slider-button-title p {
+        display: none;
+    }
+    #home-slider .slider-button a {
+        padding: 6px 11px;
+    }
+    #home-slider .slider-button {
+        margin-top: 12px;
+        width: 125px;
+    }
+
+    #home-slider.home-default-slide .slider-button .apple-button {
+        width: 113px;
+    }
+    #home-slider.home-default-slide .slider-button .google-button {
+        width: 126px;
+    }
+    .home-default-slide .content > p {
+        font-size: 13px;
+        line-height: 23px;
+        margin: 0;
+    }
+    footer .container-fluid .col-md-12 {
+        padding: 0;
+    }
+    .submit-subscribe-btn {
+        font-size: 10px;
+        width: 88px;
+    }
+    .subscribe-box .text-box {
+        padding-left: 15px;
+    }
+}

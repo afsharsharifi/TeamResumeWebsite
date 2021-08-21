@@ -1,0 +1,28 @@
+{% load static %}
+
+<footer class="footer single-prallex dir-rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
+        <a href="#" class="footer-logo"
+          ><img src="{{ setting.logo.url }}" alt="logo" class="img-responsive" />
+          <i class="fa fa-circle"></i
+        ></a>
+        <div class="footer-social">
+          <ul class="list-inline">
+            {% for social in social_media %}
+            {% if social.active == True %}
+            <li>
+              <a href="{{ social.link }}" data-tooltip="{{ social.tooltipshow }}">
+                <i class="fab fa-{{ social.title }}"></i>
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <p class="footer-btm mt30"></p>
+      </div>
+    </div>
+  </div>
+</footer>

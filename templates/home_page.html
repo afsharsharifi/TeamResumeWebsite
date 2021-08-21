@@ -1,0 +1,594 @@
+{% extends 'shared/_MainLayout.html' %} {% load static %} {% block heads %}
+<title>{{ setting.title }}</title>
+<link rel="icon" type="image/png" href="{{ setting.favicon.url }} " />
+<style>
+    .bg_secondry {
+        background: url({{ slider.SliderImage.url }}) no-repeat fixed;
+        color: #ffffff;
+        position: relative;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+</style>
+{% endblock %} {% block content %}
+
+<section class="bg_secondry" data-scroll-index="0">
+    <canvas id="particles-js"></canvas>
+    <div class="home-content">
+        <div class="text-center banner-center-content">
+            <h1>
+                {{ slider.BeforeText }}
+                <span id="js-rotating">{{slider.MiddleText}}</span> {{ slider.AfterText }}
+            </h1>
+            <h4>{{ Slider.UnserText }}</h4>
+            <br />
+            <p>{{ slider.Description }}</p>
+            <a href="#" class="button btn-default"> {{ slider.GoButton }}</a>
+        </div>
+    </div>
+</section>
+<!--// End Slider Home-->
+
+<!-- Start About Area -->
+<section class="section-padding dir-rtl" id="marv-about" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>درباره <span>ما</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt80">
+            <div class="col-lg-7 col-sm-12">
+                <p class="typo-pg">
+                    {{ about.about_text }}
+                </p>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <div class="about-bg">
+                    <img src="{{ about.about_image.url }}" class="img-responsive" alt="#" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- // End About Area -->
+
+<!-- Start Services Area -->
+<section id="marv-services" class="dir-rtl services-area section-padding" data-scroll-index="2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>خدمات <span>ما</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="show-case-box mt50">
+            <div class="row">
+                {% for item in service %} {% if item.active == True %}
+                <div class="col-md-4 col-sm-6 col-xs-12 wow zoomIn" data-wow-delay=".2s" data-wow-duration="1s">
+                    <div class="single-service">
+                        <span class="service-icon">
+              <i class="{{ item.icons }}"></i>
+            </span>
+                        <h5>{{ item.title }}</h5>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+        </div>
+        <div class="row">
+            {% for Design in design %} {% if Design.active == True %}
+            <div class="col-md-6">
+                <div class="user-interface wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="title">{{ Design.title }}</div>
+                    <h4>{{ Design.about }}</h4>
+                    <p>{{ Design.description }}</p>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+</section>
+<!--// End Services  Area -->
+
+<!--Start Portfolio Area-->
+<section id="marv-portfolio" class="dir-rtl mr-masonry-block popup-gallery section-padding" data-scroll-index="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>نمونه کارهای <span>ما</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <div class="isotope-filters isotope-tooltip">
+                    <button data-filter="" class="active">تعداد <span>{{ count_projects }}</span></button>
+                </div>
+                <div class="mr-masonry mr-columns-3">
+                    {% for item in section %} {% if item.active == True %}
+
+                    <div class="mr-masonry-item webdesign" style="position: absolute; right: 66.6667%; top: 0px;">
+                        <div class="marv-portfolio">
+                            <a class="marv-portfolio-img" href="#">
+                                <img class="img-responsive" src="{{ item.image.url }}" alt="{{ item.title }}">
+                            </a>
+                            <div class="mr-overbg">
+                                <div class="marv-portfolio-content">
+                                    <h5 class="title mr-font-white"><a href="{{ item.links}}">{{ item.title }}</a></h5>
+                                    <hr>
+                                    <ul class="marv-portfolio-icon">
+                                        <li>
+                                            <a href="{{ item.links}}"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="image-link popup-img" href="{{ item.image.url }}"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endif %} {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--//End Portfolio Area-->
+
+<!-- Start Reviews Section -->
+<section class="reviews-area single-prallex prallex-reviews" data-scroll-index="4">
+    <div class="after-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading prallex-heading">
+                        <h2>نظرات <span>کاربران</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="all-reviews">
+
+                        {% for item in rate %}
+                        <div class="single-reviews dir-rtl">
+                            <p class="review-desc">
+                                {{ item.comment }}
+                            </p>
+                            <div class="content">
+                                <div class="image">
+                                    <img src="{{ item.image.url }}" class="img-circle img-responsive" alt="Reviewer" />
+                                </div>
+                                <div class="reviewer-name">
+                                    <h5>{{ item.clint_name }}</h5>
+                                    <span>{{ item.position }}</span>
+                                    <div class="mr-star mr-font-green">
+                                        {{ item.rating }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <!--// .all-reviews  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--// End Reviews Section -->
+
+<!--Start Team Section -->
+<section class="team-area section-padding" data-scroll-index="5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>اعضای <span>تیم</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="all-team">
+                    {% for member in team_member %} {% if member.active == True %}
+                    <div class="single-team dir-rtl">
+                        <img src="{{ member.photo.url }}" alt="Member Pic" />
+                        <div class="team-hover">
+                            <h5>{{ member.first_name }} {{ member.last_name }}</h5>
+                            <small>- {{ member.position  }} -</small>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="{{member.personal_cv}}"><i class="fa fa-ellipsis-v"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %} {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--// End Team Section -->
+
+<!-- Start NewsLetter Section -->
+<section class="newsletter-area single-prallex prallex-newsletter dir-rtl">
+    <div class="after-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading prallex-heading">
+                        <h2>دریافت آخرین <span>اخبار </span> ما</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        </p>
+                        <div id="show_subscriber_msg"></div>
+                        <form method="post" id="subscriber_form" action="contact.php">
+                            <div class="subscribe-box">
+                                <input type="email" class="form-control text-box" id="subscriberemail" name="subscriber_email" placeholder="ادخل البريد الالكتروني" required />
+                                <input type="submit" name="submit" class="submit-subscribe-btn" value="اشترك" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--// End Newsletter Section -->
+
+<!-- Start Blog Section -->
+<section class="section-padding dir-rtl" data-scroll-index="6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2><span>مقالات</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt80">
+            {% for each in blog %} {% if each.active == True %}
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="mr-blog-entry">
+                    <div class="mr-entry-image clearfix">
+                        <img class="img-responsive" src="{{ each.image.url }}" alt="#">
+                        <span class="tag"><i class="ti-image"></i>تصویر</span>
+                        <span class="date"> {{ each.date_created.month }}/{{ each.date_created.day }}</span>
+                    </div>
+                    <div class="mr-blog-detail">
+                        <div class="mr-entry-title mr-mb-10">
+                            <a href="#">
+                                <h5 class="mr-tw-6">{{ each.title }}</h5>
+                            </a>
+                        </div>
+                        <div class="mr-entry-content">
+                            <p>
+                                {{ each.blog_content|truncatewords:75 }}
+                            </p>
+                        </div>
+                        <ul class="mr-entry-meta">
+                            <li>
+                                <a href="#"><i class="ti-user" aria-hidden="true"></i> {{ each.write }} </a>
+                            </li>
+                            <li>
+                                <i class="ti-eye" aria-hidden="true"></i> {{ each.visit_count }}
+                            </li>
+                            <li>
+                                <a href="{{ each.share }}"><i class="ti-share" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            {% endif %} {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- // End Blog Section -->
+
+<section class="counter-section section-padding dir-rtl">
+    <div class="container">
+        <div class="row">
+
+            {% for item in status %} {% if item.active == True %}
+            <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+                <div class="counter">
+                    <div class="icon"><i class="{{item.icon}}"></i></div>
+                    <h2 class="counterUp">{{item.value}}</h2>
+                    <p>{{item.title}}</p>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Start Pricing Area -->
+<!-- <section class="section-padding dir-rtl" data-scroll-index="7">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>آخرین <span>پکیج های</span> ما</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pricing-container">
+          <div class="plan">
+            <div class="plan-price">
+              <h3>
+                <i class="ti-gift"></i>
+                برنزی
+              </h3>
+              <span class="value">$10</span>
+              <span class="period"
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است</span
+              >
+            </div>
+            <div class="plan-features">
+              <ul>
+                <li>نطاق مجاني</li>
+                <li>90 يوم مجاني</li>
+                <li>لا شروط</li>
+                <li>فريق دعم مدى الحياة</li>
+              </ul>
+              <a class="button border" href="#">اشتري الأن</a>
+            </div>
+          </div>
+          <div class="plan featured">
+            <div class="listing-badge">
+              <span class="featured">مميزة</span>
+            </div>
+            <div class="plan-price">
+              <h3>
+                <i class="ti-medall-alt"></i>
+                طلایی
+              </h3>
+              <span class="value">$20</span>
+              <span class="period"
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است</span
+              >
+            </div>
+            <div class="plan-features">
+              <ul>
+                <li>نطاق مجاني</li>
+                <li>90 يوم مجاني</li>
+                <li>لا شروط</li>
+                <li>فريق دعم مدى الحياة</li>
+                <li>فريق دعم مدى الحياة</li>
+              </ul>
+              <a class="button border" href="#">اشتري الأن</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="plan-price">
+              <h3>
+                <i class="ti-layers-alt"></i>
+                نقره‌ای
+              </h3>
+              <span class="value">$30</span>
+              <span class="period"
+                >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است</span
+              >
+            </div>
+            <div class="plan-features">
+              <ul>
+                <li>نطاق مجاني</li>
+                <li>90 يوم مجاني</li>
+                <li>لا شروط</li>
+                <li>فريق دعم مدى الحياة</li>
+              </ul>
+              <a class="button border" href="#">اشتري الأن</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- //End Pricing Area -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-heading prallex-heading">
+                <h2></h2>
+            </div>
+            <div class="section-heading prallex-heading">
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Start Contact Section -->
+<section id="contact" class="contact dir-rtl" data-scroll-index="8">
+    <div class="part-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading prallex-heading">
+                        <h2>با ما در ارتباط باشید</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h4>ایمیلی به ما ارسال کنید</h4>
+                        <p class="mt30">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                        </p>
+                        <div id="show_contact_msg"></div>
+                        <form id="contact-form" class="mt25" method="post" action="">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    {{ contact_form.full_name }} {% for error in contact_form.full_name.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    {{ contact_form.phone }} {% for error in contact_form.phone.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    {{ contact_form.email }} {% for error in contact_form.email.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    {{ contact_form.subject }} {% for error in contact_form.subject.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    {{ contact_form.text }} {% for error in contact_form.text.errors %}
+                                    <p class="text-danger">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div>
+                                        <input type="submit" class="button" value="ارسال" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-30">
+                    <div class="box-info">
+                        <h4>راه های ارتباطی</h4>
+                        <p class="mt30">{{ setting.description }}</p>
+                        <div class="item mt-20">
+                            <i class="ti-location-pin"></i>
+                            <h5>
+                                <span>آدرس: </span> {{ setting.address }}
+                            </h5>
+                        </div>
+
+                        <div class="item mt-20">
+                            <i class="ti-email"></i>
+                            <h5>
+                                <span>ایمیل : </span> {{ setting.email }}
+                            </h5>
+                        </div>
+
+                        <div class="item mt-20">
+                            <i class="ti-headphone-alt"></i>
+                            <h5>
+                                <span>تلفن: </span> {{ setting.phone }}
+                            </h5>
+                        </div>
+                        <div class="item mt-20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //End Contact Section -->
+<div id="back-to-top">
+    <a class="top" id="top" href="#top"> <i class="ti-angle-up"></i> </a>
+</div>
+
+<div id="style-switcher" class="dir-rtl">
+    <h2>
+        تغییر تم <a href="#"><i class="fa fa-gear fa-spin"></i></a>
+    </h2>
+
+    <div>
+        <ul class="colors" id="color1">
+            <li>
+                <a href="#" class="main" title="Main"></a>
+            </li>
+            <li>
+                <a href="#" class="green" title="Green"></a>
+            </li>
+            <li>
+                <a href="#" class="blue" title="Blue"></a>
+            </li>
+            <li>
+                <a href="#" class="orange" title="Orange"></a>
+            </li>
+            <li>
+                <a href="#" class="navy" title="Navy"></a>
+            </li>
+            <li>
+                <a href="#" class="yellow" title="Yellow"></a>
+            </li>
+            <li>
+                <a href="#" class="peach" title="Peach"></a>
+            </li>
+            <li>
+                <a href="#" class="beige" title="Beige"></a>
+            </li>
+            <li>
+                <a href="#" class="purple" title="Purple"></a>
+            </li>
+            <li>
+                <a href="#" class="celadon" title="Celadon"></a>
+            </li>
+            <li>
+                <a href="#" class="red" title="Red"></a>
+            </li>
+            <li>
+                <a href="#" class="brown" title="Brown"></a>
+            </li>
+            <li>
+                <a href="#" class="cherry" title="Cherry"></a>
+            </li>
+            <li>
+                <a href="#" class="cyan" title="Cyan"></a>
+            </li>
+            <li>
+                <a href="#" class="gray" title="Gray"></a>
+            </li>
+            <li>
+                <a href="#" class="olive" title="Olive"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Style Switcher / End -->
+
+{% endblock %}

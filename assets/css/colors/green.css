@@ -1,0 +1,161 @@
+#js-rotating{
+    color: #07cb79;
+}
+.section-heading h2 span {
+    color: #07cb79;
+}
+#back-to-top .top:hover {
+    background: #07cb79;
+}
+.nav-menu ul li a:hover {
+    color: #07cb79;
+}
+.navbar-brand i{
+    color: #07cb79;
+}
+.nav-menu ul li a.active {
+    color: #07cb79;
+}
+.slideouticons label.mainlabel {
+   
+    background: #07cb79;
+   
+}
+.slideouticons input:checked ~ label.mainlabel {
+    color: #07cb79;
+}
+.list-award li span b {
+    color: #07cb79;
+}
+
+.typo-pg {
+    border-right: 3px solid #07cb79;
+}
+.single-service:hover{
+    border-bottom: 3px solid #07cb79;  
+}
+
+.single-service:hover .service-icon {
+    background-color: #07cb79;
+
+}
+.single-service .service-icon i:before {
+    color: #07cb79
+}
+.single-service > h5 > a:hover {
+    color: #07cb79
+}
+
+.user-interface .title {
+    color: #07cb79;
+}
+.form-control:focus {
+    border-color: #07cb79;
+}
+#contact-form .button{
+    background-color: #07cb79;
+}
+.footer-logo{
+    color:#07cb79;
+}
+.footer-btm a:hover {
+    color: #07cb79;
+}
+.button.btn-white{
+    color: #07cb79;
+}
+.button.btn-default{
+    background-color: #07cb79;
+}
+.contact .box-info {
+  background-color: #07cb79;
+}
+.footer-btm a:hover {
+    color: #07cb79;
+}
+.footer .footer-social ul li a:hover {
+    background: #07cb79;
+}
+.footer-social .tooltip:after,
+.footer-social [data-tooltip]:after {
+    background-color: #07cb79;
+}
+.footer-social [data-tooltip]:before,
+.footer-social .tooltip:before,
+.footer-social .tooltip-top:before {
+    border-top-color: #07cb79;
+}
+.mr-star i {
+    color: #07cb79;
+}
+.team-area .owl-pagination .owl-page.active span {
+    background: #07cb79;
+}
+.submit-subscribe-btn {
+    background: #07cb79;
+}
+
+.isotope-filters button.active,
+.isotope-filters button:hover {
+    background: #07cb79;
+}
+.isotope-filters.isotope-tooltip button span {
+    background: #07cb79;
+}
+.isotope-filters.isotope-tooltip button span:after {
+    border-top: 8px solid #07cb79;
+}
+.mr-blog-entry:hover h5{
+    color: #07cb79;
+}
+.mr-entry-image .tag {
+    background: #07cb79;
+}
+.mr-entry-image .date {
+    background: #07cb79;  
+}
+.mr-entry-title a:hover h5 {
+    color: #07cb79;
+}
+.mr-entry-meta li a:hover {
+    color: #07cb79;
+}
+.plan-price h3 i{
+    color: #07cb79;
+}
+.plan.featured .plan-price {
+    background-color: #07cb79;
+}
+a.button.border,
+a.button, .button {
+    color: #07cb79;
+    border: 1px solid #07cb79;
+}
+.plan a.button:hover,
+.plan.featured a.button {
+    background-color: #07cb79;
+}
+.gen {
+    background: #07cb79;
+}
+.counter-section .counter .icon i {
+    color: #07cb79;
+}
+.isotope-filters button.active,
+.isotope-filters button:hover {
+    background: #07cb79;
+}
+.plan.featured .listing-badge span {
+    color: #07cb79;
+}
+.marv-portfolio:hover .mr-overbg {
+    background: rgba(26, 28, 29, 0.47);
+}
+.button.btn-default:hover{
+    color: #07cb79;
+}
+@media (max-width: 991px) {
+     .navber-area .nav-menu {
+        background: #07cb79;
+     }
+}
