@@ -26,6 +26,8 @@ You can use <code> pip install -r requirements.txt </code>
 If you are using other versions of django make sure to instal last version on a vertualenv
 
 ## Authors
+<a href="https://github.com/PiE-team/first-resume">This Template is from our team </a><br>
+
 <a href="mailto: afsharsharifi2020@gmail.com">Afshar Sharifi</a><br>
 <a href="mailto: esmaili.mohhamad@gmail.com">Mohammad Esmaili</a>
 
