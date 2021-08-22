@@ -23,7 +23,7 @@ Install requirements.txt and use it easily
 You can use <code> pip install -r requirements.txt </code>
 
 ## Help
-If you are using other versions of django make sure to instal last version on a vertualenv
+If you are using other versions of django make sure to install last version on a vertualenv
 
 ## Authors
 <a href="https://github.com/PiE-team/first-resume">This Template is from our team </a><br>
