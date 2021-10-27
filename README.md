@@ -35,12 +35,11 @@
 3. Run <code>CMD</code>
 4. Go to that directory with command for example ‘ f: ’ and press enter to go to drive F write your driver instead of ‘ f ’
 5. Install <code>Django</code> and other libs in <code>requirements.txt</code> using <code>pip install -r requirements.txt</code>
-6. Download and install <code>MongoDB</code> from <a href="https://www.mongodb.com/try/download/community?tck=docs_server">here</a>
-7. In the ptoject folder Run the project using <code>python manage.py runserver</code>
-8. If you got an error before running server run command : <code>python manage.py makemigrations</code> and <code>python manage.py migrate</code>
-9. If you had another version of python write python<version> instead of python
-  10. Try step 7 again
-  11. if project runs successfully it will return such following message:
+6. In the ptoject folder Run the project using <code>python manage.py runserver</code>
+7. If you got an error before running server run command : <code>python manage.py makemigrations</code> and <code>python manage.py migrate</code>
+8. If you had another version of python write python<version> instead of python
+9. Try step 7 again
+10. if project runs successfully it will return such following message:
   <pre>
     Watching for file changes with StatReloader
     Performing system checks...
@@ -53,7 +52,7 @@
     Starting development server at http://127.0.0.1:8000/
     Quit the server with CTRL-BREAK.
   </pre>
-  12. Go to http://localhost:8000 and see the website
+11. Go to http://localhost:8000 and see the website
 
 
 **If you are using other versions of django make sure to install last version on a vertualenv**
